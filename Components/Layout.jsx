@@ -3,12 +3,15 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Head from 'next/head'
 
+import bg from "../public/icons/background.png";
+import Image from 'next/image';
+
 
 const Layout = ({children}) => {
     return (
-      <div className='relative'>
+      <div className='relative' style={{ backgroundImage: `url(${bg.src})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "top" }}>
         <Head>
-        <link rel="icon" href="/commatechfav.png" />
+       
         </Head>
           <Navbar />
           {/* <NextNProgress height={6} color="#07F300 
